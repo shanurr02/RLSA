@@ -110,7 +110,7 @@ button:hover {
     border-bottom: .35vw solid #ddbb15;
     position: absolute;
     right: 0vw;
-    top: 11.5vw;
+    top: 9.7vw;
     box-sizing: border-box;
     z-index: 10;
 }
@@ -118,7 +118,7 @@ button:hover {
 .side-panel {
     position: absolute;
     right: 20vw;
-    top: 18.20vw;
+    top: 16.4vw;
     z-index: 10;
 }
 
@@ -163,11 +163,22 @@ button:hover {
 }
 
 .container {
-    text-align: right;
+    background-color: #efd994;
+    float: right;
+    margin: 1.5vw 0vw;
+    padding: 0vw 1vw;
+    height: 12vw;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    position: relative;
 }
 
-.poetry::before,
-.poetry::after {
+.titlepng {
+    width: 16vw;
+}
+
+.container::before,
+.container::after {
     display: block;
     content: '';
     position: absolute;
@@ -176,35 +187,24 @@ button:hover {
     background-color: #000;
 }
 
-.poetry::after {
-    width: 90%;
+.container::after {
+    width: 72%;
     inset: auto 0;
+    top: 87%;
 }
 
-.poetry::before {
+.container::before {
     inset: 0 auto;
     height: 100%;
-
 }
 
 
 .poetry {
-    position: relative;
     color: #184041;
-    margin: 1vw 0vw;
-    padding: 1vw;
     font-size: 10vw;
     display: inline-block;
-    background-color: #efd994;
+    padding-left: 1vw;
 }
-
-.poetry p {
-    color: #efd994;
-    display: inline;
-    font-size: 4vw;
-}
-
-.container1 {}
 
 .featured-works {
     display: inline-block;
@@ -230,8 +230,11 @@ button:hover {
 .image {
     width: 30%;
     box-sizing: border-box;
-    border: .5vw solid #0a402b;
     height: fit-content;
+}
+
+.image img {
+    border: .5vw solid #0a402b;
 }
 
 .details {
@@ -343,6 +346,7 @@ button:hover {
 
 .browse-btn-box {
     text-align: center;
+    margin: 1vw;
 }
 
 .browse-btn-box a {

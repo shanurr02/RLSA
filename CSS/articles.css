@@ -108,7 +108,7 @@ button:hover {
     border-bottom: .35vw solid #ddbb15;
     position: absolute;
     right: 0vw;
-    top: 11.5vw;
+    top: 9.7vw;
     z-index: 10;
     box-sizing: border-box;
 }
@@ -117,7 +117,7 @@ button:hover {
     z-index: 10;
     position: absolute;
     right: 20vw;
-    top: 18.20vw;
+    top: 16.4vw;
 }
 
 .nav-panel a {
@@ -148,10 +148,6 @@ button:hover {
     scale: 1;
 }
 
-/* .nav-panel a:hover {
-    scale: 1.08;
-} */
-
 .show {
     display: block;
 }
@@ -160,8 +156,22 @@ button:hover {
     display: none;
 }
 
-.articles::before,
-.articles::after {
+.container {
+    background-color: #efd994;
+    margin: 1.5vw 0vw;
+    padding: 1vw;
+    height: 12vw;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.titlepng {
+    width: 19vw;
+}
+
+.container::before,
+.container::after {
     display: block;
     content: '';
     position: absolute;
@@ -170,25 +180,22 @@ button:hover {
     background-color: #000;
 }
 
-.articles::after {
-    width: 90%;
+.container::after {
+    width: 76%;
     inset: auto 0;
+    top: 87%;
 }
 
-.articles::before {
+.container::before {
     inset: 0 auto;
     height: 100%;
 }
 
-
 .articles {
-    position: relative;
     color: #184041;
-    margin: 1.5vw 0vw;
-    padding: 1vw;
     font-size: 10vw;
     display: inline-block;
-    background-color: #efd994;
+    padding-left: 1vw;
 }
 
 .featured-works {
@@ -203,7 +210,6 @@ button:hover {
 
 .box1,
 .box11 {
-    height: 14vw;
     margin: 5.5vw auto;
     width: 80%;
     display: flex;
@@ -214,17 +220,17 @@ button:hover {
 }
 
 .image {
-    box-sizing: border-box;
     border: .5vw solid #0a402b;
     height: fit-content;
-    padding: 1.5vw;
-    width: ;
+    padding: 1.1vw;
+    height: 80%;
     border-top: .15vw solid white;
     border-bottom: .15vw solid white;
 }
 
 .image img {
     border: .25vw solid #ddbb15;
+    width: 100%;
 }
 
 .box1::before {
@@ -237,14 +243,14 @@ button:hover {
     margin-left: 1vw;
 }
 
-.box1.1::after {
+.box11::after {
     position: absolute;
     content: '';
     background-color: white;
     height: 100%;
     width: .15vw;
     inset: 0 auto;
-    /* margin: 1vw; */
+    right: .5vw;
 }
 
 .details {
@@ -265,7 +271,6 @@ button:hover {
 
 
 .para {
-    height: 11vw;
     font-size: 1.25vw;
 }
 
@@ -355,6 +360,7 @@ button:hover {
 
 .browse-btn-box {
     text-align: center;
+    margin: 1.5vw;
 }
 
 .browse {

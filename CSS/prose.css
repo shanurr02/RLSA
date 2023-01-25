@@ -108,7 +108,7 @@ button:hover {
     border-bottom: .35vw solid #ddbb15;
     position: absolute;
     right: 0vw;
-    top: 11.5vw;
+    top: 9.7vw;
     z-index: 10;
     box-sizing: border-box;
 }
@@ -117,7 +117,7 @@ button:hover {
     position: absolute;
     right: 20vw;
     z-index: 10;
-    top: 18.20vw;
+    top: 16.4vw;
 }
 
 .nav-panel a {
@@ -160,8 +160,22 @@ button:hover {
     display: none;
 }
 
-.prose::before,
-.prose::after {
+.container {
+    background-color: #efd994;
+    margin: 1.5vw 0vw;
+    padding: 0vw 1vw;
+    height: 12vw;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.titlepng {
+    width: 17vw;
+}
+
+.container::before,
+.container::after {
     display: block;
     content: '';
     position: absolute;
@@ -170,32 +184,23 @@ button:hover {
     background-color: #000;
 }
 
-.prose::after {
-    width: 90%;
+.container::after {
+    width: 70%;
     inset: auto 0;
+    top: 87%;
 }
 
-.prose::before {
+.container::before {
     inset: 0 auto;
     height: 100%;
-
 }
 
 
 .prose {
-    position: relative;
     color: #184041;
-    margin: 1vw 0vw;
-    padding: 1vw;
     font-size: 10vw;
     display: inline-block;
-    background-color: #efd994;
-}
-
-.prose p {
-    color: #efd994;
-    display: inline;
-    font-size: 4vw;
+    padding-left: 1vw;
 }
 
 .featured-works {
@@ -335,6 +340,7 @@ button:hover {
 
 .browse-btn-box {
     text-align: center;
+    margin: 1vw;
 }
 
 .browse {
